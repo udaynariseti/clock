@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Clock</title>
+
+    <!-- momentJs imports -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script type="text/javascript" src="js/moment-timezobe-with-data.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/clockStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/digitalClockStyle.css">
+</head>
+
+<body>
+    <div class="time-zone-select">
+        <h1>Clock Example</h1>
+        <br />
+
+        <h3> Select a time zone </h3>
+        <p> <select class="js-Selector"></select> </p>
+        <br />
+        <h2>
+            Time at above time zone:
+            <span class="js-TimeLocal" style="color:red"></span>
+        </h2>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="main">
+        <div class="left">
+            <div class="clock-type-title">Analog Clock</div>
+
+            <div class="container">
+                <br />
+                <div class="clock">
+                    <div class="hour">
+                        <div class="hr" id="hr"></div>
+                    </div>
+                    <div class="min">
+                        <div class="mn" id="mn"></div>
+                    </div>
+                    <div class="sec">
+                        <div class="sc" id="sc"></div>
+                    </div>
+
+                    <div class="number number1">
+                        <span class=" actualNum actualNum1">1</span>
+                    </div>
+                    <div class="number number2">
+                        <span class="actualNum actualNum2">2</span>
+                    </div>
+                    <div class="number number3">
+                        <span class="actualNum actualNum3">3</span>
+                    </div>
+                    <div class="number number4">
+                        <span class="actualNum actualNum4">4</span>
+                    </div>
+                    <div class="number number5">
+                        <span class="actualNum actualNum5">5</span>
+                    </div>
+                    <div class="number number6">
+                        <span class="actualNum actualNum6">6</span>
+                    </div>
+                    <div class="number number7">
+                        <span class="actualNum actualNum7">7</span>
+                    </div>
+                    <div class="number number8">
+                        <span class="actualNum actualNum8">8</span>
+                    </div>
+                    <div class="number number9">
+                        <span class="actualNum actualNum9">9</span>
+                    </div>
+                    <div class="number number10">
+                        <span class="actualNum actualNum10">10</span>
+                    </div>
+                    <div class="number number11">
+                        <span class="actualNum actualNum11">11</span>
+                    </div>
+                    <div class="number number12">
+                        <span class="actualNum actualNum12">12</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="clock-type-title">Digital Clock</div>
+            <div class="container">
+                <div class="box">
+                    <div class="hours">
+                        <h1 id="hours">8</h1>
+                    </div>
+                    <h1>hours</h1>
+                </div>
+
+
+                <div class="box">
+                    <div class="minutes">
+                        <h1 id="minutes">8</h1>
+                    </div>
+                    <h1>minutes</h1>
+                </div>
+
+
+                <div class="box">
+                    <div class="seconds">
+                        <h1 id="seconds">8</h1>
+                    </div>
+                    <h1>seconds</h1>
+                </div>
+
+                <div class="box">
+                    <div class="amorpm">
+                        <h1 id="amorpm">8</h1>
+                    </div>
+                    <h1>am or pm</h1>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/clock.js"> </script>
+
+</body>
+
+</html>

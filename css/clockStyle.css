@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+    background-color: rebeccapurple;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 370px;
+    width: 100%;
+    background-color: rebeccapurple;
+    padding:20px;
+    margin:10px;
+}
+
+
+.time-zone-select{
+    color: white;
+    text-align: center;
+}
+
+.clock {
+    position: relative;
+    width:350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color:rebeccapurple;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 3px 3px 9px #542682, -3px -3px 9px #8048b8;
+   
+}
+
+.clock .number{
+    --rotation:0;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    transform: rotateZ(var(--rotation));
+} 
+
+.clock .number1 { --rotation:30deg}
+.clock .number2 { --rotation:60deg }
+.clock .number3 { --rotation:90deg }
+.clock .number4 { --rotation:120deg }
+.clock .number5 { --rotation:150deg }
+.clock .number6 { --rotation:180deg}
+.clock .number7 { --rotation:210deg }
+.clock .number8 { --rotation:240deg }
+.clock .number9 { --rotation:270deg }
+.clock .number10 { --rotation:300deg }
+.clock .number11 { --rotation:330deg }
+
+.actualNum{
+    font-size:45px;
+    display: block;
+    --rotateNum:0;
+    transform: rotate(var(--rotateNum));
+    color:white;
+ }
+
+
+.actualNum1 { --rotateNum:-30deg}
+.actualNum2 { --rotateNum:-60deg}
+.actualNum3 { --rotateNum:-90deg}
+.actualNum4 { --rotateNum:-120deg}
+.actualNum5 { --rotateNum:-150deg}
+.actualNum6 { --rotateNum:-180deg}
+.actualNum7 { --rotateNum:-210deg}
+.actualNum8 { --rotateNum:-240deg}
+.actualNum9 { --rotateNum:-270deg}
+.actualNum10 { --rotateNum:-300deg}
+.actualNum11 { --rotateNum:-330deg}
+
+.clock:before{
+    content:'';
+    position:absolute;
+    width: 15px;
+    height: 15px;
+    background:white;
+    border-radius: 50%;
+    z-index: 10000;
+}
+
+.clock .hour, 
+.clock .min,
+.clock .sec{
+    position: absolute;
+}
+
+.clock .hour, .hr{
+    width: 160px;
+    height: 160px;
+}
+
+.clock .min, .mn{
+    width: 190px;
+    height: 190px;
+}
+
+.clock .sec, .sc{
+  width:230px;
+  height: 230px;  
+}
+
+.hr, .mn, .sc{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hr:before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height:90px;
+    background: red;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+.mn:before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height:120px;
+    background: red;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+.sc:before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height:150px;
+    background: red;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+
+.clock-type-title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color:white;
+    font-size: 24px;
+}
